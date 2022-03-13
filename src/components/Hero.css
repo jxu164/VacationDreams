@@ -1,0 +1,66 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+/*To have words over video, slight darker tint on video*/
+.overlay{
+    background-color: (0, 0, 0, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*Have video take up entire width of page and have words show over it*/
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero .content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.form{
+    display: flex;
+    background-color: #ffffffcc;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Text field in the search bar*/
+.form input [type = text]{
+    border: transparent;
+    border-color: #ffffffcc;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+@media screen and (max-width: 1000px){
+    .form input[type = text]{
+        max-width: 275px;
+    }
+}

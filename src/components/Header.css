@@ -1,0 +1,44 @@
+.Headers{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1;
+    opacity: 0.8;
+    color: white;
+    text-decoration-color: black;
+    position: absolute;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+li{
+    padding: 0 1rem;
+}
+
+.hamburger {
+    display: none;
+    padding: 1rem;
+}
+
+.active{
+    top: 80px;
+}
+
+/*In case of very small screens like phones, hiding menu sizes*/
+@media screen and (max-width: 1000px){
+    .nav-menu{
+        display:none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .max-icons{
+        display:none;
+    }
+}
